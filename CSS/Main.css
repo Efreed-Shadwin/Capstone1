@@ -13,3 +13,8 @@ body {
 .nav-link{
     font-size:2em;
 }
+.flex-item{
+    justify-content:center;
+    flex-wrap:wrap;
+    
+}
