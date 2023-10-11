@@ -16,5 +16,16 @@ body {
 .flex-item{
     justify-content:center;
     flex-wrap:wrap;
+
+}
+h1{
+    text-align:center;
+    margin: 1em
+}
+h4{
+    margin: 0 25em;
+    border-style:double;
+    border-color:blue;
+    border-radius:10px;
     
 }
