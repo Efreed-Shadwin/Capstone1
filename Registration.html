@@ -10,40 +10,68 @@
     </head>
     <body>
         <header>
-             <!-- Button to open the modal login form -->
-            <button onclick="document.getElementById('id01').style.display='block'">Login</button>
-
-            <!-- The Modal -->
-            <div id="id01" class="modal">
-            <span onclick="document.getElementById('id01').style.display='none'"
-            class="close" title="Close Modal">&times;</span>
-
-            <!-- Modal Content -->
-            <form class="modal-content animate" action="/action_page.php">
-                <div class="imgcontainer">
-                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+          
+            <!-- Modal -->
+                <div class="modal top fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+                    <div class="modal-dialog  ">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <section class="vh-25" style="background-color: #508bfc;">
+                                <div class="container py-10 h-25">
+                                    <div class="row d-flex justify-content-center align-items-center ">
+                                        <div class="col-12 col-md-8 col-lg-6 col-xl-5 w-75">
+                                            <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                                                <div class="card-body p-5 text-center">
+                                    
+                                                    <h3 class="mb-5">Sign in</h3>
+                                        
+                                                    <div class="form-outline mb-4 w-100">
+                                                        <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
+                                                        <label class="form-label" for="typeEmailX-2">Email</label>
+                                                    </div>
+                                        
+                                                    <div class="form-outline mb-4 w-100">
+                                                        <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
+                                                        <label class="form-label" for="typePasswordX-2">Password</label>
+                                                    </div>
+                                        
+                                                    <!-- Checkbox -->
+                                                    <div class="form-check d-flex justify-content-start mb-4 w-75">
+                                                        <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                                                        <label class="form-check-label" for="form1Example3"> Remember password </label>
+                                                    </div>
+                                        
+                                                    <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+                                        
+                                                    <hr class="my-4 w-100 ">
+                                        
+                                                    <button class="btn btn-lg btn-block btn-primary mb-2" style="background-color: #dd4b39;"
+                                                        type="submit"><i class="fab fa-google me-2"></i> Sign in with google</button>
+                                                    <button class="btn btn-lg btn-block btn-primary mb-2" style="background-color: #3b5998;"
+                                                        type="submit"><i class="fab fa-facebook-f me-2"></i>Sign in with facebook</button>
+                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-
-                <div class="container">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
-
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <button type="submit">Login</button>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-                </div>
-
-                <div class="container" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
-                </div>
-            </form>
-            </div> 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                
+            <nav class="navbar navbar-expand-lg navbar-light bg-light m-0">
                         <div class="container-fluid bg-primary text-white">
                             <img class="navbar-brand" src="Images/pet-supply-low-resolution-logo-black-on-transparent-background.png">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,8 +81,10 @@
                                 <div class="navbar-nav">
                                 <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
                                 <a class="nav-link" href="Products.html">Products</a>
-                                <a class="nav-link" href="Checkout.html">Checkout</a>
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                <!-- Login Button -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Login
+                                </button>
                                 </div>
                             </div>
                         </div>
@@ -62,11 +92,81 @@
 
         </header>
         <body>
+            <section class="vh-100 bg-image"
+                style="background-image: url(Images/Dog-jumping.jpg);">
+                <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+                    <div class="container h-100">
+                        <div class="row d-flex justify-content-center align-items-center h-100">
+                            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                                <div class="card" style="border-radius: 15px;">
+                                    <div class="card-body p-5">
+                                        <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+
+                                        <form>
+
+                                            <div class="form-outline mb-4">
+                                                <input type="text" id="form3Example1cg" class="form-control form-control-lg" required/>
+                                                <label class="form-label" for="form3Example1cg">Your Name</label>
+                                            </div>
+
+                                            <div class="form-outline mb-4">
+                                                <input type="email" id="form3Example3cg" class="form-control form-control-lg" required/>
+                                                <label class="form-label" for="form3Example3cg">Your Email</label>
+                                            </div>
+
+                                            <div class="form-outline mb-4">
+                                                <input type="password" id="form3Example4cg" class="form-control form-control-lg" required/>
+                                                <label class="form-label" for="form3Example4cg">Password</label>
+                                            </div>
+
+                                            <div class="form-outline mb-4">
+                                                <input type="password" id="form3Example4cdg" class="form-control form-control-lg" required/>
+                                                <label class="form-label" for="form3Example4cdg">Repeat your password</label>
+                                            </div>
+
+                                            <div class="form-check d-flex justify-content-center mb-5">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" required />
+                                                <label class="form-check-label" for="form2Example3g">
+                                                    I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                                                </label>
+                                            </div>
+                                            <div class="text-center">How did you hear about us?</div>
+                                            <hr>
+                                            <div class="btn-group-vertical " role="group" aria-label="basic radio toggle button group">
+                                                <input type="radio" class="btn-check" name="vbtn-radio" id="btnradio1" autocomplete="off" checked>
+                                                <label class="btn btn-outline-primary "for=btnradio1>Online</label>
+                                                <input type="radio" class="btn-check" name="vbtn-radio" id="btnradio2" autocomplete="off" >
+                                                <label class="btn btn-outline-primary "for=btnradio2>In Store</label>
+                                                <input type="radio" class="btn-check" name="vbtn-radio" id="btnradio3" autocomplete="off" >
+                                                <label class="btn btn-outline-primary "for=btnradio3>Other</label>
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                                <button type="button"
+                                                    class="btn btn-primary btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                                            </div>
+
+                                            <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!"
+                                                class="fw-bold text-body"><u>Login here</u></a></p>
+
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </body>
-        <footer>
-
-        </footer>
+        <footer class="p-3  text-body-secondary text-center text-small bg-primary main">
+            <p class="mb-1">© 2023 Pet Supply</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">Privacy</a></li>
+              <li class="list-inline-item"><a href="#">Terms</a></li>
+              <li class="list-inline-item"><a href="#">Support</a></li>
+            </ul>
+          </footer>
         
     </body>
 </html>
