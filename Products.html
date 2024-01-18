@@ -7,6 +7,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <link href="CSS/Main.css" rel="stylesheet">
+        <script src="scripts/checkout.js"></script>
+        <script src="scripts/products.js"></script>
     </head>
     <body>
         <header>
@@ -336,7 +338,7 @@
                     </nav>
 
         </header>
-        <main class="container">
+        <main class="container clearfix" id="itemList">
             <div class="row">
                 <div class="col-lg-4 mb-3">
                     <div class="card flex-item" style="width: 18rem;">
@@ -344,7 +346,7 @@
                         <div class="card-body">
                         <h5 class="card-title">Spooky Cat Bandanas</h5>
                         <p class="card-text">Halloween themed cat bandana styled collars for those who love spooky month.</p>
-                        <a href="#" class="btn btn-primary">Add to cart</a>
+                        <a href="#" class="btn btn-primary" id="CBbtn">Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -354,7 +356,7 @@
                         <div class="card-body">
                         <h5 class="card-title">Cat Collar</h5>
                         <p class="card-text">Cat collars for adventurous little gremlins with a bell so that they are easier to keep track of.</p>
-                        <a href="#" class="btn btn-primary">Add to cart</a>
+                        <a href="#" class="btn btn-primary" id="CCbtn">Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -364,7 +366,7 @@
                         <div class="card-body">
                         <h5 class="card-title">Dog Bandana (medium)</h5>
                         <p class="card-text">Bandanas for a medium sized best friend.</p>
-                        <a href="#" class="btn btn-primary">Add to cart</a>
+                        <a href="#" class="btn btn-primary" id="DBbtn">Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -376,7 +378,7 @@
                         <div class="card-body">
                         <h5 class="card-title">Dog Collar</h5>
                         <p class="card-text">Dog collars of assorted color.</p>
-                        <a href="#" class="btn btn-primary">Add to cart</a>
+                        <a href="#" class="btn btn-primary" id="DCbtn">Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -386,7 +388,7 @@
                         <div class="card-body">
                         <h5 class="card-title">Sentry Flea and Tick Shampoo</h5>
                         <p class="card-text">To protect your friends from unfriendly invaders.</p>
-                        <a href="#" class="btn btn-primary">Add to cart</a>
+                        <a href="#" class="btn btn-primary" id="FTSbtn">Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -396,7 +398,7 @@
                         <div class="card-body">
                         <h5 class="card-title">Tennis Ball Thrower</h5>
                         <p class="card-text">To throw more easily.</p>
-                        <a href="#" class="btn btn-primary">Add to cart</a>
+                        <a href="#" class="btn btn-primary" id="TBTbtn">Add to cart</a>
                         </div>
                     </div>
                 </div>
