@@ -14,9 +14,13 @@ body {
 .nav-link{
     font-size:2em;
 }
-.flex-item{
-    justify-content:center;
+.item{
+    flex-direction: row;
     flex-wrap:wrap;
+    justify-content: space-evenly;
+    width: 18rem;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 h1{
@@ -62,4 +66,11 @@ article{
     display: flexbox;
     justify-content: center;
     align-content: center;
+}
+header{
+    padding: 0%;
+}
+.item-list{
+    flex-direction: row;
+    justify-content:space-evenly;
 }

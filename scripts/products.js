@@ -1,0 +1,27 @@
+const products = [
+    {name: "Spooky Cat Bandanas",
+    description: "Halloween themed cat bandana styled collars for those who love spooky month.",
+    price: 12.99,
+    img: "Images/cat-bandana.jpg"},
+    {name: "Cat Collar",
+    description: "Cat collars for adventurous little gremlins with a bell so that they are easier to keep track of.",
+    price: 8.99,
+    img: "Images/Cat-collar.jpg"},
+    {name: "Dog Bandana (medium)",
+    description: "Bandanas for a medium sized best friend.",
+    price: 12.99,
+    img: "Images/Dog-bandana.jpg"},
+    {name: "Dog Collars",
+    description: "Dog collars of assorted color.",
+    price: 15.99,
+    img: "Images/dog-collar.jpg"},
+    {name: "Sentry Flea and Tick Shampoo",
+    description: "To protect your friends from unfriendly invaders.",
+    price: 15.99,
+    img: "Images/Flea-and-Tick-Shampoo.jpg"},
+    {name: "Tennis Ball Thrower",
+    description: "To throw more easily.",
+    price: 12.99,
+    img: "Images/Tennis-ball-thrower.png"}
+    
+]
